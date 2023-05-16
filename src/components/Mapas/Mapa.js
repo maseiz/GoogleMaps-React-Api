@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react';
+import { ScrollToTopButton } from '../ScrollToTopButton';
+
 
 const Mapa = () => {
   const mapRef = useRef(null);
@@ -28,14 +30,13 @@ const Mapa = () => {
         });
 
         markerObj.addListener('click', () => {
-          map.setZoom(15); // Establece el zoom deseado al hacer clic en el marcador
+          map.setZoom(15);
           map.panTo(markerObj.getPosition());
         });
 
         return markerObj;
       });
 
-      // Función para ajustar el mapa al zoom máximo de un marcador específico
       const fitBoundsToMarker = markerId => {
         const marker = markers.find(marker => marker.id === markerId);
         if (marker) {
@@ -45,13 +46,11 @@ const Mapa = () => {
         }
       };
 
-      // Ejemplo: Ajustar al zoom máximo del primer marcador después de 2 segundos
       setTimeout(() => {
         fitBoundsToMarker(1);
-      }, 2000);
+      }, 1000);
     };
 
-    // Cargar la API de Google Maps
     const script = document.createElement('script');
     script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBwagwxR6PPGzFqcl-NG4FPVextZr1Nsds`; // Reemplaza YOUR_API_KEY con tu propia clave de API
     script.async = true;
@@ -60,7 +59,12 @@ const Mapa = () => {
     document.head.appendChild(script);
   }, []);
 
-  return <div ref={mapRef} style={{ width: '100%', height: '2000px' }} />;
+  return (
+    <div>
+      <ScrollToTopButton />
+      <div ref={mapRef} style={{ width: '100%', height: '2000px' }} />
+    </div>
+  );
 };
 
 export default Mapa;
