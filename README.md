@@ -10,6 +10,9 @@ About the code, I have used JavaScript, CSS, and the React library. I also used 
 
 Although I still have a limited understanding of JavaScript code and implementing it with React, with the help of ChatGPT and some video tutorials, I managed to get the application to work and made some modifications to customize it.
 
-I have also deployed my project on the Vercel platform. The URL to my website is: google-maps-react-api.vercel.app.
+I have also deployed my project on the Vercel platform. The URL to my website is:
+https://google-maps-react-9vvzwywjo-maseiz.vercel.app/
+
+
 
 
