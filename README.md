@@ -6,7 +6,7 @@ The web browser displays the coordinates of the city of Madrid, and three functi
 
 I have used Trello as a tool to organize the backlog and Figma for the web prototyping.
 
-About the code, I have used JavaScript, CSS, and the React library. I also used Bootstrap, even though it has been only for the header, as an exercise to familiarize myself with it.
+About the code, I have used JavaScript, CSS, and the React library. I also used some Bootstrap, even though it has been only for the header, as an exercise to familiarize myself with it.
 
 Although I still have a limited understanding of JavaScript code and implementing it with React, with the help of ChatGPT and some video tutorials, I managed to get the application to work and made some modifications to customize it.
 
