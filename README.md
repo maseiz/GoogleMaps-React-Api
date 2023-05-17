@@ -15,5 +15,7 @@ https://google-maps-react-9vvzwywjo-maseiz.vercel.app/
 
 I am currently learning to conduct some testing for my project. I hope to have it ready soon.
 
+Finally, I uploaded a repository of my proyect to GitHub.
+
 
 
